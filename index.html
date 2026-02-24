@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B D Gardiya Nursery School</title>
+
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:#f4f4f4;
+}
+
+/* Header */
+header {
+    background:#ff6b6b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* Menu */
+nav {
+    background:#4ecdc4;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+nav a {
+    color:white;
+    padding:10px 15px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover {
+    background:#333;
+}
+
+/* Section */
+section {
+    padding:20px;
+}
+
+/* Box */
+.box {
+    background:white;
+    padding:15px;
+    margin:10px 0;
+    border-radius:10px;
+}
+
+/* Gallery */
+.gallery {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    gap:10px;
+}
+.gallery img {
+    width:100%;
+    border-radius:10px;
+}
+
+/* Notice */
+.notice {
+    background:#fff3cd;
+    padding:10px;
+    margin:5px 0;
+    border-left:5px solid orange;
+}
+
+/* Form */
+form input, form textarea {
+    width:100%;
+    padding:10px;
+    margin:5px 0;
+}
+button {
+    background:#ff6b6b;
+    color:white;
+    padding:10px;
+    border:none;
+    cursor:pointer;
+}
+
+/* Footer */
+footer {
+    background:#ff6b6b;
+    color:white;
+    text-align:center;
+    padding:10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>B D Gardiya Nursery School</h1>
+<p>Learning with Fun 🎈</p>
+</header>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#gallery">Gallery</a>
+<a href="#notice">Notice</a>
+<a href="#admission">Admission</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="box">
+<h2>Welcome</h2>
+<p>We provide a joyful and safe learning environment for children.</p>
+</section>
+
+<!-- Gallery -->
+<section id="gallery" class="box">
+<h2>Photo Gallery 📸</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+<img src="https://via.placeholder.com/150">
+</div>
+<p>👉 Replace images with your school photos</p>
+</section>
+
+<!-- Notice -->
+<section id="notice" class="box">
+<h2>Notice Board 📝</h2>
+<div class="notice">📅 Annual Function on 10th March</div>
+<div class="notice">📢 Admission Open for 2026</div>
+<div class="notice">🎉 Saraswati Puja Celebration</div>
+</section>
+
+<!-- Admission Form -->
+<section id="admission" class="box">
+<h2>Admission Form 🧑‍🎓</h2>
+
+<form onsubmit="submitForm(); return false;">
+<input type="text" placeholder="Student Name" required>
+<input type="text" placeholder="Parent Name" required>
+<input type="number" placeholder="Age" required>
+<input type="text" placeholder="Phone Number" required>
+<textarea placeholder="Address"></textarea>
+<button type="submit">Submit</button>
+</form>
+
+<p id="msg"></p>
+
+</section>
+
+<!-- Contact -->
+<section id="contact" class="box">
+<h2>Contact</h2>
+<p>Address: Your Address Here</p>
+<p>Phone: 1234567890</p>
+<p>Email: bdgardiya@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 B D Gardiya Nursery School</p>
+</footer>
+
+<script>
+function submitForm() {
+    document.getElementById("msg").innerHTML = "Form submitted successfully!";
+}
+</script>
+
+</body>
+</html>
